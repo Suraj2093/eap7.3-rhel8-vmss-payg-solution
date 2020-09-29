@@ -19,7 +19,7 @@ STORAGE_ACCOUNT_NAME=$6
 CONTAINER_NAME=$7
 STORAGE_ACCESS_KEY=$(echo "${8}" | openssl enc -d -base64)
 
-echo "Initial JBoss EAP 7.2 setup" | adddate >> eap.log
+echo "Initial JBoss EAP 7.3 setup" | adddate >> eap.log
 echo "JBoss EAP admin user: " ${JBOSS_EAP_USER} | adddate >> eap.log
 echo "Storage Account Name: " ${STORAGE_ACCOUNT_NAME} | adddate >> eap.log
 echo "Storage Container Name: " ${CONTAINER_NAME} | adddate >> eap.log
@@ -30,14 +30,14 @@ flag=$?; if [ $flag != 0 ] ; then echo  "ERROR! Red Hat Subscription Manager Reg
 echo "subscription-manager attach --pool=EAP_POOL" | adddate  >> eap.log
 subscription-manager attach --pool=${RHSM_POOL} >> eap.log 2>&1
 flag=$?; if [ $flag != 0 ] ; then echo  "ERROR! Pool Attach for JBoss EAP Failed" | adddate  >> eap.log; exit $flag;  fi
-echo "Subscribing the system to get access to JBoss EAP 7.2 repos" | adddate >> eap.log
+echo "Subscribing the system to get access to JBoss EAP 7.3 repos" | adddate >> eap.log
 
-# Install JBoss EAP 7.2
-echo "subscription-manager repos --enable=jb-eap-7.2-for-rhel-8-x86_64-rpms" | adddate >> eap.log
-subscription-manager repos --enable=jb-eap-7.2-for-rhel-8-x86_64-rpms >> eap.log 2>&1
+# Install JBoss EAP 7.3
+echo "subscription-manager repos --enable=jb-eap-7.3-for-rhel-8-x86_64-rpms" | adddate >> eap.log
+subscription-manager repos --enable=jb-eap-7.3-for-rhel-8-x86_64-rpms >> eap.log 2>&1
 flag=$?; if [ $flag != 0 ] ; then echo  "ERROR! Enabling repos for JBoss EAP Failed" | adddate >> eap.log; exit $flag;  fi
 
-echo "Installing JBoss EAP 7.2 repos" | adddate >> eap.log
+echo "Installing JBoss EAP 7.3 repos" | adddate >> eap.log
 echo "yum groupinstall -y jboss-eap7" | adddate >> eap.log
 yum groupinstall -y jboss-eap7 >> eap.log 2>&1
 flag=$?; if [ $flag != 0 ] ; then echo  "ERROR! JBoss EAP installation Failed" | adddate >> eap.log; exit $flag;  fi
