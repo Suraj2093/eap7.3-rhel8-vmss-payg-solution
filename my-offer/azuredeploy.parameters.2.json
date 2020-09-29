@@ -3,7 +3,7 @@
     "value": "centralus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS2"
+    "value": "EAP73-RHEL8-PAYG-VMSS3"
   },
   "adminUsername": {
     "value": "demouser"
@@ -15,7 +15,7 @@
     "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAy+xzz2b6SZlH2vRNac+Pjr2hevz3gRsZ3oRVvl1n/fSXsYJS5XQPCpeHJygQLjuNfcEQvQTzARuwxV6kbHjDgmIAlTTp/TqX/jvZRw/+HNi9aBgsC8sDZ5qW72Z5G26EapQgndly4DUsvaOjo2CGwmtEyWztExBB9Q8ewK7lYxJghL61o4KlTYgSxiPwvo3qPq79l5pkpa6IbjVd5rG4YiFp08nPyR3/79bxH8KPunjHraD9VO4f+ELAn7/Rjl0e8FijVxu90RNb/2WfBTq12N7n99YAepoFDJCJIYA1jt8/TYBtipaqTgfibbzWBvZ0+qC4lbwVgZB0BEA7bpYf2w=="
   },
   "vmSize": {
-    "value": "Standard_E16s_v3"
+    "value": "Standard_F8s_v2"
   },
   "instanceCount": {
     "value": "3"
@@ -44,19 +44,19 @@
     "value": "new"
   },
   "publicIpName": {
-    "value": "EAP73-RHEL8-pip2"
+    "value": "EAP73-RHEL8-pip3"
   },
   "publicIpDns": {
-    "value": "eap73-rhel8-payg-vmss2-377778c3aa"
+    "value": "eap73-rhel8-payg-vmss3-b1396a8a0b"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg3"
   },
   "publicIPAllocationMethod": {
     "value": "Static"
   },
   "publicIpSku": {
-    "value": "Standard"
+    "value": "Basic"
   },
   "bootDiagnostics": {
     "value": "On"
@@ -65,7 +65,7 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "eap73rhel8strgdh"
+    "value": "eap73rhelfewfsrp"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
