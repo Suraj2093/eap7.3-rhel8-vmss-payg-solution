@@ -3,22 +3,22 @@
     "value": "centralus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS4"
+    "value": "EAP73-RHEL8-PAYG-VMSS6"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "sshPublicKey"
+    "value": "password"
   },
   "adminPasswordOrSSHKey": {
-    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAy+xzz2b6SZlH2vRNac+Pjr2hevz3gRsZ3oRVvl1n/fSXsYJS5XQPCpeHJygQLjuNfcEQvQTzARuwxV6kbHjDgmIAlTTp/TqX/jvZRw/+HNi9aBgsC8sDZ5qW72Z5G26EapQgndly4DUsvaOjo2CGwmtEyWztExBB9Q8ewK7lYxJghL61o4KlTYgSxiPwvo3qPq79l5pkpa6IbjVd5rG4YiFp08nPyR3/79bxH8KPunjHraD9VO4f+ELAn7/Rjl0e8FijVxu90RNb/2WfBTq12N7n99YAepoFDJCJIYA1jt8/TYBtipaqTgfibbzWBvZ0+qC4lbwVgZB0BEA7bpYf2w=="
+    "value": "demoPassword1!"
   },
   "vmSize": {
-    "value": "Standard_F8s_v2"
+    "value": "Standard_DS2_v2"
   },
   "instanceCount": {
-    "value": "3"
+    "value": "2"
   },
   "virtualNetworkNewOrExisting": {
     "value": "existing"
@@ -41,19 +41,13 @@
     "value": "RHEL8-EXT-VNET-Rg1"
   },
   "publicIpNewOrExisting": {
-    "value": "new"
-  },
-  "publicIpName": {
-    "value": "EAP73-RHEL8-pip4"
+    "value": "none"
   },
   "publicIpDns": {
-    "value": "eap73-rhel8-payg-vmss4-b1396a8a0b"
+    "value": ""
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg4"
-  },
-  "publicIPAllocationMethod": {
-    "value": "Static"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg6"
   },
   "publicIpSku": {
     "value": "Basic"
@@ -62,10 +56,10 @@
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "new"
+    "value": "existing"
   },
   "storageAccountName": {
-    "value": "eap73rhelfijhsrp"
+    "value": "diagstrgrhel"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
@@ -74,7 +68,7 @@
     "value": "Standard_LRS"
   },
   "jbossEAPUserName": {
-    "value": "demouser1"
+    "value": "demouser"
   },
   "jbossEAPPassword": {
     "value": "demoPassword1!"
