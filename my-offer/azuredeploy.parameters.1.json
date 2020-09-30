@@ -3,7 +3,7 @@
     "value": "centralus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS5"
+    "value": "EAP73-RHEL8-PAYG-VMSS6"
   },
   "adminUsername": {
     "value": "demouser"
@@ -18,7 +18,7 @@
     "value": "Standard_DS2_v2"
   },
   "instanceCount": {
-    "value": "2"
+    "value": "3"
   },
   "virtualNetworkNewOrExisting": {
     "value": "existing"
@@ -41,19 +41,13 @@
     "value": "RHEL8-EXT-VNET-Rg1"
   },
   "publicIpNewOrExisting": {
-    "value": "existing"
-  },
-  "publicIpName": {
-    "value": "ext-rhel8-pip1"
+    "value": "none"
   },
   "publicIpDns": {
-    "value": "ext-rhel8-pip1"
+    "value": ""
   },
   "publicIpResourceGroupName": {
-    "value": "DiagStorage-Rg1"
-  },
-  "publicIPAllocationMethod": {
-    "value": "Dynamic"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg6"
   },
   "publicIpSku": {
     "value": "Basic"
