@@ -3,7 +3,7 @@
     "value": "centralus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS8"
+    "value": "EAP73-RHEL8-PAYG-VMSS2"
   },
   "adminUsername": {
     "value": "demouser"
@@ -15,54 +15,63 @@
     "value": "demoPassword1!"
   },
   "vmSize": {
-    "value": "Standard_D8s_v3"
+    "value": "Standard_DS2_v2"
   },
   "instanceCount": {
     "value": "2"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "virtualNetworkName": {
-    "value": "RHEL8-EXT-VNET1"
+    "value": "VirtualNetwork"
   },
   "addressPrefixes": {
     "value": [
-      "10.4.0.0/16"
+      "10.5.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "EXT-RHEL8-Subnet1"
+    "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.4.0.0/24"
+    "value": "10.5.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "RHEL8-EXT-VNET-Rg1"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
   },
   "publicIpNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "publicIpName": {
-    "value": "ext-rhel8-pip1"
+    "value": "EAP73-RHEL8-VMSS-pip2"
   },
   "publicIpDns": {
-    "value": "ext-rhel8-pip1"
+    "value": "ext-rhel8-pip12"
   },
   "publicIpResourceGroupName": {
-    "value": "DiagStorage-Rg1"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
   },
   "publicIPAllocationMethod": {
-    "value": "Dynamic"
+    "value": "Static"
   },
   "publicIpSku": {
-    "value": "Basic"
+    "value": "Standard"
   },
   "bootDiagnostics": {
-    "value": "Off"
+    "value": "On"
+  },
+  "storageNewOrExisting": {
+    "value": "new"
+  },
+  "storageAccountName": {
+    "value": "eap73rhebbb23be162"
+  },
+  "storageAccountType": {
+    "value": "Standard_LRS"
   },
   "storageReplication": {
-    "value": "Standard_ZRS"
+    "value": "Standard_LRS"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
