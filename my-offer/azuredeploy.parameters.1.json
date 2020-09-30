@@ -3,7 +3,7 @@
     "value": "centralus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS6"
+    "value": "EAP73-RHEL8-PAYG-VMSS4"
   },
   "adminUsername": {
     "value": "demouser"
@@ -41,13 +41,19 @@
     "value": "RHEL8-EXT-VNET-Rg1"
   },
   "publicIpNewOrExisting": {
-    "value": "none"
+    "value": "new"
+  },
+  "publicIpName": {
+    "value": "EAP73-RHEL8-VMSS-pip4"
   },
   "publicIpDns": {
-    "value": ""
+    "value": "eap73-rhel8-payg-pip4-hdn"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg6"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg4"
+  },
+  "publicIPAllocationMethod": {
+    "value": "Static"
   },
   "publicIpSku": {
     "value": "Basic"
@@ -56,13 +62,13 @@
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "storageAccountName": {
-    "value": "diagstrgrhel"
+    "value": "eap73rheeffpka"
   },
   "storageAccountType": {
-    "value": "Standard_LRS"
+    "value": "Standard_GRS"
   },
   "storageReplication": {
     "value": "Standard_LRS"
