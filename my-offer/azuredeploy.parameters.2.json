@@ -3,7 +3,7 @@
     "value": "centralus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS6"
+    "value": "EAP73-RHEL8-PAYG-VMSS7"
   },
   "adminUsername": {
     "value": "demouser"
@@ -21,24 +21,24 @@
     "value": "2"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "virtualNetworkName": {
-    "value": "RHEL8-EXT-VNET1"
+    "value": "VirtualNetwork"
   },
   "addressPrefixes": {
     "value": [
-      "10.4.0.0/16"
+      "10.3.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "EXT-RHEL8-Subnet1"
+    "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.4.0.0/24"
+    "value": "10.3.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "RHEL8-EXT-VNET-Rg1"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg7"
   },
   "publicIpNewOrExisting": {
     "value": "none"
@@ -47,7 +47,7 @@
     "value": ""
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg6"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg7"
   },
   "publicIpSku": {
     "value": "Basic"
@@ -56,10 +56,10 @@
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "storageAccountName": {
-    "value": "diagstrgrhel"
+    "value": "eap73rhe3b677b39a9"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
@@ -68,7 +68,7 @@
     "value": "Standard_LRS"
   },
   "jbossEAPUserName": {
-    "value": "demouser"
+    "value": "demouser1"
   },
   "jbossEAPPassword": {
     "value": "demoPassword1!"
