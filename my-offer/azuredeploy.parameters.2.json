@@ -47,7 +47,7 @@
     "value": "EAP73-RHEL8-VMSS-pip2"
   },
   "publicIpDns": {
-    "value": "eap73-rhel8-vmss2-5s3q"
+    "value": "eap73-rhel8-payg-vmss2-habwe"
   },
   "publicIpResourceGroupName": {
     "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
@@ -65,7 +65,7 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "eap73rhelsbwj3jh"
+    "value": "eap73rhelnsjer"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
