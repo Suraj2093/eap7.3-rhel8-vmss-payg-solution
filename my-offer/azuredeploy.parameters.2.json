@@ -1,6 +1,6 @@
 {
   "location": {
-    "value": "centralus"
+    "value": "westus"
   },
   "vmssName": {
     "value": "EAP73-RHEL8-PAYG-VMSS2"
@@ -9,36 +9,36 @@
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "password"
+    "value": "sshPublicKey"
   },
   "adminPasswordOrSSHKey": {
-    "value": "demoPassword1!"
+    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAlYAsmuLIJO3WF2m4HhSsjz87x6nLIi9VX17rx848B/0JZp3eWlTi6zxqRfP+/cSwPfT8ZILFvHpBhQA0Qctp9RaEmyVk7l8lgsWOellsdwFfhqT7yxcF25REai4D9q71waHzjgQTfLM12VyZzrBURdj2L+BtqpLcA9OLuM/V8x2fInUlx0X7K4LCUEvUi8JumVs6KACzuYmc9QXhS9sGd8idiknU2O6wOdqqLUw2Y6AgoEvjEeki79mDWRT3BdR/Fxon2QAybORD5IBznUEVgdvcxpyEcA1dy/jqVssR+vYW7MOjGN89plBTT26PkM8Yrsq3N/uMY9zT91yUXDmdSw=="
   },
   "vmSize": {
     "value": "Standard_DS2_v2"
   },
   "instanceCount": {
-    "value": "2"
+    "value": "3"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "new"
+    "value": "existing"
   },
   "virtualNetworkName": {
-    "value": "VirtualNetwork"
+    "value": "EXT-VNET1"
   },
   "addressPrefixes": {
     "value": [
-      "10.5.0.0/16"
+      "10.3.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "Subnet-1"
+    "value": "EXT-subnet-Rg1"
   },
   "subnetPrefix": {
-    "value": "10.5.0.0/24"
+    "value": "10.3.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
+    "value": "EXt-Resource-Rg1"
   },
   "publicIpNewOrExisting": {
     "value": "new"
@@ -47,7 +47,7 @@
     "value": "EAP73-RHEL8-VMSS-pip2"
   },
   "publicIpDns": {
-    "value": "ext-rhel8-pip12"
+    "value": "eap73-rhel8-vmss2-5s3q"
   },
   "publicIpResourceGroupName": {
     "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
@@ -65,7 +65,7 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "eap73rhebbb23be162"
+    "value": "eap73rhelsbwj3jh"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
