@@ -263,6 +263,10 @@
         "natEndPort2": 9120,
         "adminBackendPort": 9990,
         "healthProbe" : "eap-lb-health",
+        "networkSecurityGroupName": "jbosseap-nsg",
+        "networkSecurityGroupId": {
+            "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
+        },
         "linuxConfiguration": {
             "disablePasswordAuthentication": true,
             "ssh": {
@@ -304,11 +308,64 @@
             }
         },
         {
+            "condition": "[equals(parameters('publicIpSku'), 'Standard')]",
+            "type": "Microsoft.Network/networkSecurityGroups",
+            "apiVersion": "2019-08-01",
+            "name": "[variables('networkSecurityGroupName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "securityRules": [
+                {
+                    "name": "Port_8080",
+                    "properties": {
+                        "priority": 350,
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "destinationPortRange": "8080",
+                        "protocol": "Tcp",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*"
+                    }
+                },
+                {
+                    "name": "default-allow-22",
+                    "properties": {
+                        "priority": 340,
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "destinationPortRange": "22",
+                        "protocol": "Tcp",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*"
+                    }
+                },
+                {
+                    "name": "http_9990",
+                    "properties": {
+                        "priority": 360,
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "destinationPortRange": "9990",
+                        "protocol": "Tcp",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*"
+                    }
+                }
+                ]
+            }
+        },
+        {
             "condition": "[equals(parameters('virtualNetworkNewOrExisting'), 'new')]",
             "type": "Microsoft.Network/virtualNetworks",
             "apiVersion": "2019-11-01",
             "name": "[parameters('virtualNetworkName')]",
             "location": "[parameters('location')]",
+            "dependsOn": [
+                "[if(equals(parameters('publicIpSku'),'Standard'), variables('networkSecurityGroupName'), variables('storageAccountName'))]"
+            ],
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": "[parameters('addressPrefixes')]"
@@ -317,7 +374,8 @@
                     {
                         "name": "[parameters('subnetName')]",
                         "properties": {
-                            "addressPrefix": "[parameters('subnetPrefix')]"
+                            "addressPrefix": "[parameters('subnetPrefix')]",
+                            "networkSecurityGroup": "[if(equals(parameters('publicIpSku'), 'Standard'), variables('networkSecurityGroupId') , json('null'))]"
                         }
                     }
                 ]
@@ -428,7 +486,7 @@
                 "[if(equals(parameters('publicIpNewOrExisting'),'none'), parameters('virtualNetworkName'), parameters('publicIpName'))]"
             ],
             "sku": {
-                "name": "Basic"
+                "name": "[parameters('publicIpSku')]"
             },
             "properties": {
                 "frontendIPConfigurations": [
