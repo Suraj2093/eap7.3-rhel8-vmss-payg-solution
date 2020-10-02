@@ -363,9 +363,6 @@
             "apiVersion": "2019-11-01",
             "name": "[parameters('virtualNetworkName')]",
             "location": "[parameters('location')]",
-            "dependsOn": [
-                "[if(equals(parameters('publicIpSku'),'Standard'), variables('networkSecurityGroupName'), variables('storageAccountName'))]"
-            ],
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": "[parameters('addressPrefixes')]"
@@ -374,8 +371,7 @@
                     {
                         "name": "[parameters('subnetName')]",
                         "properties": {
-                            "addressPrefix": "[parameters('subnetPrefix')]",
-                            "networkSecurityGroup": "[if(equals(parameters('publicIpSku'), 'Standard'), variables('networkSecurityGroupId') , json('null'))]"
+                            "addressPrefix": "[parameters('subnetPrefix')]"
                         }
                     }
                 ]
@@ -395,7 +391,8 @@
                 "[variables('loadBalancersName')]",
                 "[parameters('virtualNetworkName')]",
                 "[variables('storageAccountName')]",
-                "[if(equals(parameters('bootDiagnostics'),'On'), parameters('storageAccountName'), parameters('virtualNetworkName'))]"
+                "[if(equals(parameters('bootDiagnostics'),'On'), parameters('storageAccountName'), parameters('virtualNetworkName'))]",
+                "[if(equals(parameters('publicIpSku'),'Standard'), variables('networkSecurityGroupName'), variables('storageAccountName'))]"
             ],
             "properties": {
                 "overprovision": "false",
@@ -447,7 +444,8 @@
                                         ]
                                     }
                                 }
-                                ]
+                                ],
+                                "networkSecurityGroup": "[if(equals(parameters('publicIpSku'), 'Standard'), variables('networkSecurityGroupId') , json('null'))]"
                             }
                         }
                         ]
