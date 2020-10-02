@@ -9,10 +9,10 @@
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "sshPublicKey"
+    "value": "password"
   },
   "adminPasswordOrSSHKey": {
-    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAlYAsmuLIJO3WF2m4HhSsjz87x6nLIi9VX17rx848B/0JZp3eWlTi6zxqRfP+/cSwPfT8ZILFvHpBhQA0Qctp9RaEmyVk7l8lgsWOellsdwFfhqT7yxcF25REai4D9q71waHzjgQTfLM12VyZzrBURdj2L+BtqpLcA9OLuM/V8x2fInUlx0X7K4LCUEvUi8JumVs6KACzuYmc9QXhS9sGd8idiknU2O6wOdqqLUw2Y6AgoEvjEeki79mDWRT3BdR/Fxon2QAybORD5IBznUEVgdvcxpyEcA1dy/jqVssR+vYW7MOjGN89plBTT26PkM8Yrsq3N/uMY9zT91yUXDmdSw=="
+    "value": "demoPassword1!"
   },
   "vmSize": {
     "value": "Standard_DS2_v2"
@@ -44,10 +44,10 @@
     "value": "new"
   },
   "publicIpName": {
-    "value": "EAP73-RHEL8-VMSS-pip2"
+    "value": "EAP73-RHEL8-PAYG-Std-pip1"
   },
   "publicIpDns": {
-    "value": "eap73-rhel8-payg-vmss2-habwe"
+    "value": "eap73-rhel8-vmss-pip225"
   },
   "publicIpResourceGroupName": {
     "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
@@ -65,7 +65,7 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "eap73rhelnsjer"
+    "value": "eap73rhelsbo"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
