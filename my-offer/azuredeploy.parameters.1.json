@@ -1,9 +1,9 @@
 {
   "location": {
-    "value": "westus"
+    "value": "eastus2"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS9"
+    "value": "EAP73-RHEL8-PAYG-VMSS1"
   },
   "adminUsername": {
     "value": "demouser"
@@ -21,57 +21,45 @@
     "value": "2"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "virtualNetworkName": {
-    "value": "EXT-VNET1"
+    "value": "VirtualNetwork"
   },
   "addressPrefixes": {
     "value": [
-      "10.3.0.0/16"
+      "10.0.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "EXT-subnet-Rg1"
+    "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.3.0.0/24"
+    "value": "10.0.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EXt-Resource-Rg1"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg1"
   },
   "publicIpNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "publicIpName": {
-    "value": "EAP73-RHEL8-VMSS-STD-pip1"
+    "value": "EAP73-RHEL8-PAYG-VMSS1-ip"
   },
   "publicIpDns": {
-    "value": "eap73-rhel8-vmss-std-pip1"
+    "value": "eap73-rhel8-payg-vmss1-3a695f037a"
   },
   "publicIpResourceGroupName": {
-    "value": "EXt-Resource-Rg1"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg1"
   },
   "publicIPAllocationMethod": {
-    "value": "Static"
-  },
-  "publicIpSku": {
-    "value": "Standard"
+    "value": "Dynamic"
   },
   "bootDiagnostics": {
-    "value": "On"
-  },
-  "storageNewOrExisting": {
-    "value": "existing"
-  },
-  "storageAccountName": {
-    "value": "diagstrgeap73"
-  },
-  "storageAccountType": {
-    "value": "Standard_LRS"
+    "value": "Off"
   },
   "storageReplication": {
-    "value": "Standard_LRS"
+    "value": "Standard_ZRS"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
