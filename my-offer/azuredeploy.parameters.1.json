@@ -1,24 +1,24 @@
 {
   "location": {
-    "value": "eastus2"
+    "value": "eastus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS1"
+    "value": "EAP73-RHEL8-PAYG-VMSS2"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "password"
+    "value": "sshPublicKey"
   },
   "adminPasswordOrSSHKey": {
-    "value": "demoPassword1!"
+    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAwMst03AaKffTccW8LT6OIxiPODrlVN/bEPyiMCnWmjoPgiNLFCbETsfhrPyf9OoOxHX+V5UzHJfXBjHyra3j8DcWHLqTJqGWq0MGpjYad6iH7KvWwu0egZdnC5B2eQ8/4q9WP68+pVMzzGLIbgJu+iER686NeOvCjmc3+9p8k3Lj7956ZhQOwcxtKPst5VMwO+xDRwAyA/LFeCcE+CGq/wD7t9PfkJRg2VdOoF/XDTTCSx0s5TMvkC36Og/1msFWvIGUFrQ3inzIAIk6kIZ/dIDsjLmftX5l62zJJU/VjdSjQ2d60SuYDmXWWxnyzTrHeLP/4hblrqM/1fVkCcu60w=="
   },
   "vmSize": {
     "value": "Standard_DS2_v2"
   },
   "instanceCount": {
-    "value": "2"
+    "value": "5"
   },
   "virtualNetworkNewOrExisting": {
     "value": "new"
@@ -28,29 +28,29 @@
   },
   "addressPrefixes": {
     "value": [
-      "10.7.0.0/16"
+      "10.13.0.0/16"
     ]
   },
   "subnetName": {
     "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.7.0.0/24"
+    "value": "10.13.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg1"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
   },
   "publicIpNewOrExisting": {
     "value": "new"
   },
   "publicIpName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS1-ip"
+    "value": "EAP73-RHEL8-PAYG-VMSS2-ip"
   },
   "publicIpDns": {
-    "value": "eap73-rhel8-payg-vmss1-90f7fd8a77"
+    "value": "eap73-rhel8-payg-vmss2-9eebd0c0e9"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg1"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
   },
   "publicIPAllocationMethod": {
     "value": "Dynamic"
@@ -62,13 +62,13 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "eap73rhe14290577a5"
+    "value": "eap73rhe343c39f17b"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
   },
   "storageReplication": {
-    "value": "Standard_GRS"
+    "value": "Standard_LRS"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
@@ -77,12 +77,12 @@
     "value": "demoPassword1!"
   },
   "rhsmUserName": {
-    "value": "surajpaispektra"
+    "value": "microsoftuser"
   },
   "rhsmPassword": {
-    "value": "Spektra@123"
+    "value": "Password@123"
   },
   "rhsmPoolEAP": {
-    "value": "8a85f996710f3b1801716f5db33b3fab"
+    "value": "8a85f99c746e3964017478c9da14688c"
   }
 }
