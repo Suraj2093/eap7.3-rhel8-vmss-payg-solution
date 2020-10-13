@@ -258,11 +258,12 @@
                     },
                     {
                         "name": "rhsmUserName",
-                        "type": "Microsoft.Compute.UserNameTextBox",
+                        "type": "Microsoft.Common.TextBox",
                         "label": "RedHat Subscription Manager username",
-                        "osPlatform": "Linux",
                         "constraints": {
-                            "required": true
+                            "required": true,
+                            "regex": "^(?=.{5,45}$).*",
+                            "validationMessage": "The value must be between 5 and 45 characters long."
                         },
                         "toolTip": "Provide User name for RedHat subscription Manager"
                     },
