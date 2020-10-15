@@ -307,7 +307,7 @@
             "name": "[parameters('publicIpName')]",
             "location": "[parameters('location')]",
             "sku": {
-                "name": "[parameters('publicIpSku')]"
+                "name": "[if(equals(parameters('publicIpSku'), 'Standard'), 'Standard' , 'Basic')]"
             },
             "properties": {
                 "publicIPAllocationMethod": "[parameters('publicIPAllocationMethod')]",
