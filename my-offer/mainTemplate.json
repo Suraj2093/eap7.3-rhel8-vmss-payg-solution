@@ -490,7 +490,7 @@
             "name": "[variables('loadBalancersName')]",
             "location": "[parameters('location')]",
             "sku": {
-                "name": "[parameters('publicIpSku')]"
+                "name": "[if(equals(parameters('publicIpSku'), 'Standard'), 'Standard' , 'Basic')]"
             },
             "dependsOn": [
                 "[if(equals(parameters('publicIpNewOrExistingOrNone'),'none'), parameters('virtualNetworkName'), parameters('publicIpName'))]"
