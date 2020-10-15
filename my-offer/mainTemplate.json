@@ -242,7 +242,7 @@
         "bootdiagnosticscheck": "[and(equals(parameters('storageNewOrExisting'), 'new'), equals(parameters('bootDiagnostics'),'On'))]",
         "storageAccountName": "[concat('jbosstrg', uniqueString(resourceGroup().id))]",
         "publicIpAddressId": {
-            "id": "[resourceId(parameters('publicIpResourceGroupName'), 'Microsoft.Network/publicIPAddresses', parameters('publicIpName'))]"
+            "id": "[if(not(equals(parameters('publicIpNewOrExistingOrNone'), 'none')), resourceId(parameters('publicIpResourceGroupName'), 'Microsoft.Network/publicIPAddresses', parameters('publicIpName')) , json('null'))]"
         },
         "subnetId" : {
             "id": "[resourceId(parameters('virtualNetworkResourceGroupName'), 'Microsoft.Network/virtualNetworks/subnets/', parameters('virtualNetworkName'), parameters('subnetName'))]"
