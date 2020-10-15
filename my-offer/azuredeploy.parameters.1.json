@@ -3,19 +3,19 @@
     "value": "westus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS6"
+    "value": "EAP73-RHEL8-PAYG-VMSS10"
   },
   "adminUsername": {
-    "value": "demouser"
+    "value": "DemoUser"
   },
   "authenticationType": {
     "value": "password"
   },
   "adminPasswordOrSSHKey": {
-    "value": "demoPassword1&"
+    "value": "demoPassword1!"
   },
   "vmSize": {
-    "value": "Standard_DS2_v2"
+    "value": "Standard_F8s_v2"
   },
   "instanceCount": {
     "value": "2"
@@ -40,46 +40,55 @@
   "virtualNetworkResourceGroupName": {
     "value": "EXt-Resource-Rg1"
   },
-  "publicIpNewOrExisting": {
+  "publicIpNewOrExistingOrNone": {
     "value": "none"
+  },
+  "publicIpName": {
+    "value": ""
   },
   "publicIpDns": {
     "value": ""
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg6"
+    "value": ""
+  },
+  "publicIPAllocationMethod": {
+    "value": ""
   },
   "publicIpSku": {
-    "value": "Basic"
+    "value": ""
   },
   "bootDiagnostics": {
     "value": "On"
   },
   "storageNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "storageAccountName": {
-    "value": "diagstrgeap73"
+    "value": "diageap73rhel8strgv2grs"
   },
   "storageAccountType": {
-    "value": "Standard_LRS"
+    "value": "Standard_GRS"
+  },
+  "storageAccountKind": {
+    "value": "StorageV2"
   },
   "storageReplication": {
-    "value": "Standard_LRS"
+    "value": "Standard_ZRS"
   },
   "jbossEAPUserName": {
-    "value": "demoUser1"
+    "value": "demouser1"
   },
   "jbossEAPPassword": {
     "value": "demoPassword1&"
   },
   "rhsmUserName": {
-    "value": "Suraj@ss.com"
+    "value": "microsoftuser"
   },
   "rhsmPassword": {
-    "value": "Spektra@123&"
+    "value": "Password&123"
   },
   "rhsmPoolEAP": {
-    "value": "8a85f99974d1005001751c968ffc1dc7"
+    "value": "8a85f99c746e3964017478c9da14688c"
   }
 }
