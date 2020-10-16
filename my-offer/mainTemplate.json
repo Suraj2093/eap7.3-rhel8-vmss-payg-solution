@@ -304,7 +304,7 @@
             "condition": "[equals(parameters('publicIpNewOrExistingOrNone'), 'new')]",
             "type": "Microsoft.Network/publicIPAddresses",
             "apiVersion": "2019-11-01",
-            "name": "[parameters('publicIpName')]",
+            "name": "[if(equals(parameters('publicIpNewOrExistingOrNone'),'none'), 'PublicIp', parameters('publicIpName'))]",
             "location": "[parameters('location')]",
             "sku": {
                 "name": "[if(equals(parameters('publicIpSku'), 'Standard'), 'Standard' , 'Basic')]"
