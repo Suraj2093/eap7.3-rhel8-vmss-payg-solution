@@ -1,9 +1,9 @@
 {
   "location": {
-    "value": "westus"
+    "value": "eastus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS7"
+    "value": "EAP73-RHEL8-PAYG-VMSS11"
   },
   "adminUsername": {
     "value": "demouser"
@@ -28,29 +28,35 @@
   },
   "addressPrefixes": {
     "value": [
-      "10.9.0.0/16"
+      "10.0.0.0/16"
     ]
   },
   "subnetName": {
     "value": "Subnet-1"
   },
   "subnetPrefix": {
-    "value": "10.9.1.0/24"
+    "value": "10.0.0.0/24"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg7"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg11"
   },
-  "publicIpNewOrExisting": {
+  "publicIpNewOrExistingOrNone": {
     "value": "none"
+  },
+  "publicIpName": {
+    "value": ""
   },
   "publicIpDns": {
     "value": ""
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg7"
+    "value": ""
+  },
+  "publicIPAllocationMethod": {
+    "value": ""
   },
   "publicIpSku": {
-    "value": "Basic"
+    "value": ""
   },
   "bootDiagnostics": {
     "value": "On"
@@ -59,10 +65,13 @@
     "value": "new"
   },
   "storageAccountName": {
-    "value": "eap73rhe4ec6d67926"
+    "value": "eap73rhe7d98c339ed"
   },
   "storageAccountType": {
     "value": "Standard_LRS"
+  },
+  "storageAccountKind": {
+    "value": "Storage"
   },
   "storageReplication": {
     "value": "Standard_LRS"
@@ -77,7 +86,7 @@
     "value": "microsoftuser"
   },
   "rhsmPassword": {
-    "value": "Password@123"
+    "value": "Password&123"
   },
   "rhsmPoolEAP": {
     "value": "8a85f99c746e3964017478c9da14688c"
