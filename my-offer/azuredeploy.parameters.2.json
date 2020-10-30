@@ -3,54 +3,54 @@
     "value": "westus"
   },
   "vmssName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS2"
+    "value": "EAP73-RHEL8-PAYG-VMSS9"
   },
   "adminUsername": {
     "value": "demouser"
   },
   "authenticationType": {
-    "value": "sshPublicKey"
+    "value": "password"
   },
   "adminPasswordOrSSHKey": {
-    "value": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA7j0OiLlfbPEyjYkIZSLqWobLs3+cFdpeQqXRB9hpjomi+J4yTGo3XDyBxN9JR/ho2G34jji9hmHQjrGaornBkkvVoeO3YafMejQMSQF2HeY8aH3AmcQ3qVU1OsrKlBWcWOMfU0cQ11+1EqtOG/3FynF/RuA1gF7pPJOx/qMFxbwPINWe3lUUE3d611Z2/+RTVlN+IOjCBBDj89/z0KGjT2iHX/7qZgqgyc1i+BZZ0QwWWdOLiZx5jU6jQBjEMDOEk0D86MrM0anJgaqd5P48h+aDaqv415TjK3/h7zTj08dxxFN3AG/JtXr65dxg5ShlNKZoDcZbkHEzWTORDRqZlQ== rsa-key-20201028"
+    "value": "demoPassword1&"
   },
   "vmSize": {
-    "value": "Standard_DS2_v2"
+    "value": "Standard_F8s_v2"
   },
   "instanceCount": {
-    "value": "3"
+    "value": "2"
   },
   "virtualNetworkNewOrExisting": {
-    "value": "existing"
+    "value": "new"
   },
   "virtualNetworkName": {
-    "value": "EXT-VNET1"
+    "value": "new-VirtualNetwork9"
   },
   "addressPrefixes": {
     "value": [
-      "10.3.0.0/16"
+      "10.9.0.0/16"
     ]
   },
   "subnetName": {
-    "value": "EXt-new-subnet5"
+    "value": "new-Subnet9.1"
   },
   "subnetPrefix": {
-    "value": "10.3.5.0/24"
+    "value": "10.9.0.0/20"
   },
   "virtualNetworkResourceGroupName": {
-    "value": "EXt-Resource-Rg1"
+    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg9"
   },
   "publicIpNewOrExistingOrNone": {
-    "value": "new"
+    "value": "existing"
   },
   "publicIpName": {
-    "value": "EAP73-RHEL8-PAYG-VMSS-stdpip2"
+    "value": "EAP73-RHEL8-VMSS-STD-pip1"
   },
   "publicIpDns": {
-    "value": "eap73-rhel8-payg-vmss2-stdpipa8fc335"
+    "value": "eap73-rhel8-vmss-std-pip1"
   },
   "publicIpResourceGroupName": {
-    "value": "EAP73-RHEL8-payg-VMSS-Soln-Test-Rg2"
+    "value": "EXt-Resource-Rg1"
   },
   "publicIPAllocationMethod": {
     "value": "Static"
@@ -59,36 +59,24 @@
     "value": "Standard"
   },
   "bootDiagnostics": {
-    "value": "On"
-  },
-  "storageNewOrExisting": {
-    "value": "new"
-  },
-  "storageAccountName": {
-    "value": "diagstrgstdv2grs"
-  },
-  "storageAccountType": {
-    "value": "Standard_GRS"
-  },
-  "storageAccountKind": {
-    "value": "StorageV2"
+    "value": "Off"
   },
   "storageReplication": {
-    "value": "Standard_GRS"
+    "value": "Standard_ZRS"
   },
   "jbossEAPUserName": {
     "value": "demouser1"
   },
   "jbossEAPPassword": {
-    "value": "demoPassword1&"
+    "value": "demoPassword1!"
   },
   "rhsmUserName": {
-    "value": "microsoftuser"
+    "value": "Suraj@ss.com"
   },
   "rhsmPassword": {
-    "value": "Password&123"
+    "value": "Spektra@123&"
   },
   "rhsmPoolEAP": {
-    "value": "8a85f99c746e3964017478c9da14688c"
+    "value": "8a85f99974d1005001751c968ffc1dc7"
   }
 }
